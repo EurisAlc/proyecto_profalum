@@ -1,0 +1,528 @@
+/* Estilos - Pproyecto */
+
+/* CMD. Fuetes de Google. */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700;800;900&family=Nunito:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Nunito:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,700&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Nunito:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;400;500;600;700&family=Merriweather+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,700&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Nunito:wght@200;300;400;500;600;700&display=swap');
+
+*{
+    border-radius: none;
+}
+
+body{
+    font-family: "Montserrat", Sans-serif, "Helvetica";
+}
+
+/* Modificación de los enlaces (<a>). */
+a:link,
+a:visited,
+a:active {
+    text-decoration: none;
+}
+
+/* Barra de navegación. */
+.nav-item::after {
+    content: '';
+    display: block;
+    width: 0px;
+    height: 3px;
+    background: #fcd462;
+    transition: 0.4s;
+}
+
+.nav-item:hover::after {
+    width: 100%
+}
+
+.navbar-nav .nav-link:focus,
+.navbar-nav .nav-link:hover {
+    color: #83869b;
+}
+
+.nav-link {
+    padding: 20px px;
+    transition: 0.2s
+}
+
+.navbar-nav {
+    font-family: "Montserrat", Sans-serif, "Helvetica";
+    
+}
+
+.navbar{
+    background-color: white;
+}
+
+.navbar-nav, .navbar-light, .nav-link{
+    text-decoration: none;
+    color: #00204a;
+}
+
+
+.nav-item {
+    padding: 15px;
+    font-weight: 500;
+    font-size: 17px;
+}
+
+#menuBurger, .navbar-toggler{
+    color: #00204a;
+    border-color: #00204a;
+}
+
+.navbar-toggler{
+    border: 1px solid;
+}
+
+
+/* Título y párrafo. Portada. */
+.portada{
+    background-image: url(../css/medios/fondo_2.jpg);
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-repeat: no-repeat;
+    /*background-attachment: fixed;*/
+    position: relative;
+}
+
+
+.h1{
+    text-align: center;
+    font-weight: 600;
+    font-size: 64px;
+    color: #252A34;
+    padding-bottom: 10px;
+}
+
+.logoProf{
+    text-align: center;
+    line-height: 1.5em;
+    font-size: 20px;
+    padding-left: 30%;
+    padding-right: 30%;
+    padding-top: 50px;
+    position: relative;
+}
+
+#logoP{
+    width: 250px;
+
+}
+
+.logoP{
+    padding-top: 200px;
+}
+
+#profalum{
+    color: #00204a;
+    font-family: "Montserrat";
+    font-weight: 700;
+    border-top: 3px solid #00204a;
+    border-bottom: 3px solid #00204a;
+}
+
+#alum{
+    font-family: "Montserrat";
+    font-weight: 400;
+    color: #84879c;
+}
+
+/*.texto{
+    font-family: "Montserrat";
+    /*text-align: center;
+    line-height: 1.5em;*
+    font-weight: 400;
+    font-size: 18px;
+    /*padding-left: 30%;
+    padding-right: 30%;
+    padding-bottom: 50px;
+    padding-top: 30px;
+    /*background-size: 300px;
+    color: #252A34;
+    position: relative;
+}*/
+
+
+/* Botones. */
+
+.boton-container{
+    text-align: center;
+    height: 190px;
+    width: 100%;
+}
+
+.btn-log{
+    font-family: "Montserrat";
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: 400;
+    background-color: #00204a;
+    color: white;
+    margin-right: 20px;
+    width: 150px;
+    border: none;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    box-shadow: 0px 0px 5px 0px #00204a;
+}
+
+.btn-log:hover{
+    background-color: #fcd462;
+    color: #00204a;
+    font-weight: 400;
+}
+
+.btn-reg{
+    font-family: "Montserrat";
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: 400;
+    background-color: #00204a;
+    color: white;
+    margin-left: 20px;
+    width: 150px;
+    border: none;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    box-shadow: 0px 0px 5px 0px #00204a;
+}
+
+.btn-reg:hover{
+    background-color: #fcd362;
+    color: #00204a;
+    font-weight: 400;
+}
+
+.footerHome{
+    background-color: #00204a;
+}
+
+
+/* CAJA LOGIN. */
+
+.seccion {
+    width:800px;
+    max-width:100%;
+    padding: 50px;
+    margin: 60px auto;
+    border: 1px solid #ffffff67;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px -5px #84879c;
+    background-color: white;
+}
+
+
+/* Formulario. */
+.container-registro{
+    width:800px;
+    max-width:100%;
+    padding: 50px;
+    margin: 60px auto;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px -5px #84879c;
+    background-color: white;
+    margin-bottom: 10rem;
+    margin-top: 15rem;
+}
+
+.btn-form{
+    font-family: "Montserrat";
+    text-align: center;
+    padding: 8px;
+    margin-top: 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 400;
+    background-color: #00204a;
+    color: white;
+    width: 180px;
+    border: none;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    box-shadow: 0px 0px 5px 0px #00204a;
+}
+
+.btn-form:hover {
+    background-color: #fcd462;
+    color: #00204a;
+    font-weight: 400;
+}
+
+/* Mensaje de password. */ 
+
+.ocultar {
+    display: none;
+}
+
+.mostrar {
+    display: block;
+}
+
+
+/* Login. */
+
+.page-login {
+    background-image: url("./medios/fondo_2.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+.container-login{
+    width:500px;
+    max-width:100%;
+    padding: 50px;
+    margin: 60px auto;
+    /*border: 1px solid #84879c;*/
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px -5px #84879c;
+    background-color: white;
+    margin-bottom: 5rem;
+    margin-top: 5rem;
+}
+
+#login-logo{
+    max-width: 130px;
+    margin-left: 65px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.btn-login {
+    font-family: "Montserrat";
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 400;
+    background-color: #00204a;
+    color: white;
+    width: 20rem;
+    border: none;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    box-shadow: 0px 0px 5px 0px #00204a;
+}
+
+.btn-login:hover {
+    background-color: #fcd462;
+    color: #00204a;
+    font-weight: 400;
+}
+
+footer{
+    font-weight: 400;
+    font-size: 15px;
+}
+
+/* Plataforma PRPFÁLUM - Home */
+.container-inicio{
+    width: 70rem;
+    max-width:90%;
+    padding: 50px;
+    margin: 60px auto;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px -5px #84879c;
+    background-color: white;
+    margin-bottom: 10rem;
+    margin-top: 16rem;
+}
+
+.h2-user{
+    color: #00204a;
+}
+
+.acceso-rapido .card{
+    display: block;
+    padding: 2rem;
+}
+
+
+.card-item{
+    font-weight: 600;
+    font-size: 15px;
+    color: #00204a;
+    box-shadow: 0px 0px 3px 0px #84879c;
+}
+
+.card-item::after{
+    content: '';
+    display: block;
+    width: 0px;
+    height: 3px;
+    /*background: #fcd462;*/
+    transition: 0.4s;
+}
+
+.card-item:hover::after {
+    width: 100%
+}
+
+.card-item:focus,
+.card-item:hover{
+    color: #6a6c7c;
+    /*background-color: #00204a;*/
+}
+.card:hover{
+    background-color: #ffdc7b;
+    box-shadow: inset 0px 0px 20px 5px #ffcd45;
+    box-shadow: 0px 0px 3px 0px #84879c;
+}
+
+/* Sección Mi cuaderno. */
+
+.container-cuaderno{
+    width: 100rem;
+    max-width: 90%;
+    padding: 50px;
+    margin: 60px auto;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px -5px #84879c;
+    background-color: white;
+    margin-bottom: 10rem;
+    margin-top: 15rem;
+}
+
+/* Boton. Agregar tabla. */
+
+.btn-tabla{
+    font-family: "Montserrat";
+    text-align: center;
+    padding: 8px;
+    /*margin-top: 20px;*/
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 400;
+    background-color: #00204a;
+    color: white;
+    width: 160px;
+    border: none;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    box-shadow: 0px 0px 5px 0px #00204a;
+}
+
+.btn-tabla:hover {
+    background-color: #fcd462;
+    color: #00204a;
+    font-weight: 400;
+}
+
+/* Tabla. Cuaderno del profesor. */
+
+th{
+    white-space: nowrap;
+}
+
+#headTabla{
+    font-size: 16px;
+    text-align: center;
+    color: white;
+    background-color: #00204a;
+}
+
+#filasAlum{
+    font-size: 13px;
+    font-weight: 200 !important;
+    text-align: center;
+    
+}
+
+/* Sección. política de privacidad. */
+
+.container-politica{
+    width: 70rem;
+    max-width: 100%;
+    padding: 50px;
+    margin: 90px auto;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px -5px #84879c;
+    background-color: white;
+    margin-bottom: 5rem;
+    margin-top: -5rem;
+}
+
+/* Sección. Quiénes somos. */
+
+.container-quienes{
+    width: 90rem;
+    max-width: 90%;
+    padding: 50px;
+    margin: 60px auto;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px -5px #84879c;
+    background-color: white;
+    margin-top: -5rem;
+
+}
+
+.text-justify{
+    text-align:justify;
+}
+
+#imgSomos{
+    max-width: 100%;
+    height: auto;
+}
+ .politica{
+    margin-top: 6rem;
+    padding: 7rem;
+    max-width: 100%;
+    background-color: #00204a;
+}
+
+.quienesSomos{
+    margin-top: 6rem;
+    padding: 7rem;
+    max-width: 100%;
+    background-color: #00204a;
+}
+
+/* Botón form contacto */
+
+.btn-contacto{
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 400;
+    background-color: #00204a;
+    color: white;
+    max-width: 50%;
+    border: none;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    box-shadow: 0px 0px 5px 0px #00204a;
+}
+
+.btn-contacto:hover {
+    background-color: #fcd462;
+    color: #00204a;
+    font-weight: 400;
+}
+
+.iframe{
+    max-width: 100%;
+    height: 300px;
+}
+
+.select2-container--default .select2-results__option--highlighted[aria-selected] {
+    background-color: #c3caff;
+    color: #252A34;
+}
